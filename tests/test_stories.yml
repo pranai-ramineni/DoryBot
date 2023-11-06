@@ -1,0 +1,204 @@
+# # #### This file contains tests to evaluate that your bot behaves as expected.
+# # #### If you want to learn more, please see the docs: https://rasa.com/docs/rasa/testing-your-assistant
+
+
+# stories:
+# # - story: basic flow 1
+# #   steps:
+# #     - intent: greet
+# #     - action: utter_greet
+# #     - action: utter_ask_name
+# #     - intent: name_input
+# #     - action: utter_chitchat
+
+# - story: basic_flow_bad_mood
+#   steps:
+#     - intent: greet
+#     - action: utter_greet
+#     - action: utter_ask_name
+#     - intent: name_input
+#       entities:
+#       - name: Ramineni
+#     - action: utter_chitchat
+#     - intent: mood_bad
+#     - action: utter_bad_mood_response
+#     - action: utter_ADHD_help
+
+# - story: basic_flow_good_mood
+#   steps:
+#     - intent: greet
+#     - action: utter_greet
+#     - action: utter_ask_name
+#     - intent: name_input
+#       entities:
+#       - name: Jhonson
+#     - action: utter_chitchat
+#     - intent: mood_good
+#     - action: utter_good_mood_response
+#     - action: utter_ADHD_help
+
+# - story: adhd help deny
+#   steps:
+#     - action: utter_ADHD_help
+#     - intent: deny
+#     - action: utter_feedback
+
+# - story: feedback bad bye
+#   steps:
+#     - action: utter_feedback
+#     - intent: feedback_bad
+#     - action: action_submit_user_feedback
+#     - action: utter_feedback_bad
+
+# - story: feedback good bye
+#   steps:
+#     - action: utter_feedback
+#     - intent: feedback_good
+#     - action: action_submit_user_feedback
+#     - action: utter_feedback_good
+
+# - story: adhd help affirm
+#   steps:
+#     - action: utter_ADHD_help
+#     - intent: affirm
+#     - action: action_get_search_results
+#     - action: utter_question1
+#     - intent: q1_levelOne
+#       entities:
+#       - q1_level: "1"
+#     - slot_was_set:
+#       - q1_level: "1"
+#     - action: utter_question2
+#     - intent: q2_levelOne
+#       entities:
+#       - q2_level: "2"
+#     - slot_was_set:
+#       - q2_level: "2"
+#     - action: utter_question4
+#     - intent: q4_levelOne
+#       entities:
+#       - q4_level: "4"
+#     - slot_was_set:
+#       - q4_level: "4"  
+
+# # stories:
+# # - story: happy path 1
+# #   steps:
+# #   - user: |
+# #       hello there!
+# #     intent: greet
+# #   - action: utter_greet
+# #   - user: |
+# #       amazing
+# #     intent: mood_great
+# #   - action: utter_happy
+
+# # stories:
+# # - story: get info  # name of the story - just for debugging
+# #   steps:
+# #   - intent: greet                         # user message with no entities
+# #   - action: utter_ask_for_contact_info
+# #   - intent: inform                        # user message with entities
+# #     entities:
+# #     - name: Pranai
+# #     - email: abc@gmail.com
+# #   - action: utter_acknowledge_provided_info               # action that the bot should execute
+
+# # - story: basic flow test 1  # name of the story - just for debugging
+# #   steps:
+# #   - intent: greet                         # user message with no entities
+# #   - action: utter_greet
+# #   - action: utter_ask_for_contact_info
+# #   - intent: name_input
+# #     entities:
+# #     - name: Pranai
+# #   - action: utter_chitchat
+# #   - intent: mood_bad
+# #   - action: utter_adult_child
+# #   - intent: adult
+# #   - action: utter_instruction_1
+# #   - action: utter_treatment_journey
+# #   - intent: have_ADHD
+# #   - action: utter_take_test
+# #   - intent: affirm
+# #   - action: utter_clinics_nearby
+# #   - action: utter_anything_else
+# #   - intent: deny
+# #   - action: utter_goodbye
+  
+# # - story: happy path 2
+# #   steps:
+# #   - user: |
+# #       hello there!
+# #     intent: greet
+# #   - action: utter_greet
+# #   - user: |
+# #       amazing
+# #     intent: mood_great
+# #   - action: utter_happy
+# #   - user: |
+# #       bye-bye!
+# #     intent: goodbye
+# #   - action: utter_goodbye
+
+# # - story: sad path 1
+# #   steps:
+# #   - user: |
+# #       hello
+# #     intent: greet
+# #   - action: utter_greet
+# #   - user: |
+# #       not good
+# #     intent: mood_unhappy
+# #   - action: utter_cheer_up
+# #   - action: utter_did_that_help
+# #   - user: |
+# #       yes
+# #     intent: affirm
+# #   - action: utter_happy
+
+# # - story: sad path 2
+# #   steps:
+# #   - user: |
+# #       hello
+# #     intent: greet
+# #   - action: utter_greet
+# #   - user: |
+# #       not good
+# #     intent: mood_unhappy
+# #   - action: utter_cheer_up
+# #   - action: utter_did_that_help
+# #   - user: |
+# #       not really
+# #     intent: deny
+# #   - action: utter_goodbye
+
+# # - story: sad path 3
+# #   steps:
+# #   - user: |
+# #       hi
+# #     intent: greet
+# #   - action: utter_greet
+# #   - user: |
+# #       very terrible
+# #     intent: mood_unhappy
+# #   - action: utter_cheer_up
+# #   - action: utter_did_that_help
+# #   - user: |
+# #       no
+# #     intent: deny
+# #   - action: utter_goodbye
+
+# - story: say goodbye
+#   steps:
+#   - user: |
+#       bye-bye!
+#     intent: goodbye
+#   - action: utter_goodbye
+
+# - story: bot challenge
+#   steps:
+#   - user: |
+#       are you a bot?
+#     intent: bot_challenge
+#   - action: utter_iamabot

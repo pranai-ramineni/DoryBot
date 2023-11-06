@@ -1,0 +1,10 @@
+(rasa train)
+(rasa run actions)
+(rasa shell)
+
+Recommended intents:
+hi
+Rami
+good
+yes
+helpful

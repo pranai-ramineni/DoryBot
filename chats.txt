@@ -1,0 +1,70 @@
+ | utter_greet | Hi, I am Dory. I help people manage their ADHD
+utter_ask_name | What's your name?
+utter_chitchat | How are you feeling today pr?
+ | utter_good_mood_response | That is awesome! Here is a joke to make your day even better. https://www.rd.com/wp-content/uploads/2022/01/Unbeetable-food-joke-2.jpg?resize=700,700
+utter_ADHD_help | Would you like to answer some questions to help your ADHD diagnosis?
+ | utter_question1 | Do you tend to avoid or delay getting started on a new important task?
+utter_question2 | Do you find that the majority of your tasks are boring or repetitive, making them difficult to complete?
+utter_question4 | How often do you feel restless or fidgety?
+utter_feedback | Thank you for reaching out, was I helpful today?
+ | utter_feedback_good | Thank you for the feedback. See you again, bye!
+ | utter_greet | Hi, I am Dory. I help people manage their ADHD
+utter_ask_name | What's your name?
+utter_chitchat | How are you feeling today Pranai?
+ | utter_good_mood_response | That is awesome! Here is a joke to make your day even better. https://www.rd.com/wp-content/uploads/2022/01/Unbeetable-food-joke-2.jpg?resize=700,700
+utter_ADHD_help | Would you like to answer some questions to help your ADHD diagnosis?
+ | utter_question1 | Do you tend to avoid or delay getting started on a new important task?
+utter_question2 | Do you find that the majority of your tasks are boring or repetitive, making them difficult to complete?
+utter_question4 | How often do you feel restless or fidgety?
+utter_feedback | Thank you for reaching out, was I helpful today?
+ | utter_feedback_good | Thank you for the feedback. See you again, bye!
+ | utter_greet | Hi, I am Dory. I help people manage their ADHD
+utter_ask_name | What's your name?
+utter_chitchat | How are you feeling today pranai?
+ | utter_good_mood_response | That is awesome! Here is a joke to make your day even better. https://www.rd.com/wp-content/uploads/2022/01/Unbeetable-food-joke-2.jpg?resize=700,700
+utter_ADHD_help | Would you like to answer some questions to help your ADHD diagnosis?
+ | utter_question1 | Do you tend to avoid or delay getting started on a new important task?
+utter_question2 | Do you find that the majority of your tasks are boring or repetitive, making them difficult to complete?
+utter_question4 | How often do you feel restless or fidgety?
+utter_feedback | Thank you for reaching out, was I helpful today?
+ | utter_feedback_good | Thank you for the feedback. See you again, bye!
+ | utter_greet | Hi, I am Dory. I help people manage their ADHD
+utter_ask_name | What's your name?
+utter_chitchat | How are you feeling today Pranai?
+ | utter_bad_mood_response | I am sorry about that. Here is an inspiring quote to lift your mood. https://www.notsalmon.com/wp-content/uploads/2021/08/quote-move-forward-strong-capable-640x640.jpg
+utter_ADHD_help | Would you like to answer some questions to help your ADHD diagnosis?
+ | utter_question1 | Do you tend to avoid or delay getting started on a new important task?
+utter_question2 | Do you find that the majority of your tasks are boring or repetitive, making them difficult to complete?
+utter_question4 | How often do you feel restless or fidgety?
+utter_feedback | Thank you for reaching out, was I helpful today?
+ | utter_feedback_bad | I am sorry about that. I will improve from your feedback. See you again, bye!
+ | utter_greet | Hi, I am Dory. I help people manage their ADHD
+utter_ask_name | What's your name?
+utter_chitchat | How are you feeling today Pranai?
+ | utter_good_mood_response | That is awesome! Here is a joke to make your day even better. https://www.rd.com/wp-content/uploads/2022/01/Unbeetable-food-joke-2.jpg?resize=700,700
+utter_ADHD_help | Would you like to answer some questions to help your ADHD diagnosis?
+ | utter_question1 | Do you tend to avoid or delay getting started on a new important task?
+utter_question2 | Do you find that the majority of your tasks are boring or repetitive, making them difficult to complete?
+utter_question4 | How often do you feel restless or fidgety?
+utter_feedback | Thank you for reaching out, was I helpful today?
+ | utter_feedback_good | Thank you for the feedback. See you again, bye!
+ | utter_greet | Hi, I am Dory. I help people manage their ADHD
+utter_ask_name | What's your name?
+utter_chitchat | How are you feeling today Pranai?
+ | utter_good_mood_response | That is awesome! Here is a joke to make your day even better. https://www.rd.com/wp-content/uploads/2022/01/Unbeetable-food-joke-2.jpg?resize=700,700
+utter_ADHD_help | Would you like to answer some questions to help your ADHD diagnosis?
+ | utter_question1 | Do you tend to avoid or delay getting started on a new important task?
+utter_question2 | Do you find that the majority of your tasks are boring or repetitive, making them difficult to complete?
+utter_question4 | How often do you feel restless or fidgety?
+utter_feedback | Thank you for reaching out, was I helpful today?
+ | utter_feedback_good | Thank you for the feedback. See you again, bye!
+ | utter_greet | Hi, I am Dory. I help people manage their ADHD
+utter_ask_name | What's your name?
+utter_chitchat | How are you feeling today Pranai?
+ | utter_good_mood_response | That is awesome! Here is a joke to make your day even better. https://www.rd.com/wp-content/uploads/2022/01/Unbeetable-food-joke-2.jpg?resize=700,700
+utter_ADHD_help | Would you like to answer some questions to help your ADHD diagnosis?
+ | utter_question1 | Do you tend to avoid or delay getting started on a new important task?
+utter_question2 | Do you find that the majority of your tasks are boring or repetitive, making them difficult to complete?
+utter_question4 | How often do you feel restless or fidgety?
+utter_feedback | Thank you for reaching out, was I helpful today?
+ | utter_feedback_good | Thank you for the feedback. See you again, bye!

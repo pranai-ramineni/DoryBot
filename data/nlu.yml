@@ -1,0 +1,212 @@
+version: "3.1"
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - moin
+    - yo
+    - hey there
+    - hi there
+    - good morning
+    - good evening
+    - good afternoon
+- intent: thank
+  examples: |
+    - Thanks
+    - Thank You
+    - thanks
+    - thanks a lot
+    - thank you so much
+    - thank you very much
+    - appreciate it
+    - gracias
+    - much obliged
+- intent: name_input
+  examples: |
+    - My name is Pranai
+    - My name is [Pranai](name)
+    - [pranai](name) here
+    - It is [pranai](name)
+    - name is [Rami](name)
+    - my name is [pranai](name)
+    - name is [pranai](name)
+    - my name is [Rami](name)
+    - [Ramineni](name)
+    - [PR](name)
+    - [Pranai](name) is my name
+    - I am [Sasank](name)
+    - [Surya](name)
+    - [Bodhith](name)
+    - [Pranai](name)
+    - It's [Ramineni](name)
+    - [Ramineni](name) is my name
+    - It is [PR](name)
+    - My name is [Rami](name)
+    - I am [Surya](name)
+    - I am [Phanith](name)
+    - My name is [Jhonson](name)
+    - [Pran](name)
+    - [pranai](name)
+    - [pranai](name)
+- intent: goodbye
+  examples: |
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+- intent: affirm
+  examples: |
+    - yes
+    - sure
+    - ok
+    - absolutely
+    - alright
+- intent: deny
+  examples: |
+    - no
+    - nah
+    - nope
+    - negative
+    - n
+    - never
+    - maybe not
+- intent: feedback_good
+  examples: |
+    - "helpful"
+- intent: feedback_bad
+  examples: |
+    - "not helpful"
+- intent: mood_good
+  examples: |
+    - "perfect"
+    - "good"
+    - "well"
+    - "doing good"
+    - "doing okay"
+    - "doing well"
+    - "I am happy"
+    - "happy"
+    - "feeling ecstatic"
+    - "ecstatic"
+    - "on high"
+    - "high"
+    - "stoked"
+    - "i am stoked"
+    - "im stoked"
+    - "fine"
+    - "I am fine"
+    - "fit as a fiddle"
+    - "doing perfect"
+    - "pretty good"
+    - "great"
+    - "amazing"
+    - "a ok"
+    - "feeling like a king"
+    - "wonderful"
+    - "I am feeling very good"
+    - "I am great"
+    - "Feeling well"
+    - "im doing great"
+    - "I am amazing"
+    - "I am going to save the world"
+    - "super stoked"
+    - "extremely good"
+    - "so so perfect"
+    - "so good"
+    - "so perfect"
+    - "can't be better"
+    - good
+- intent: mood_bad
+  examples: |
+    - "not good"
+    - "my day was horrible"
+    - "it was not good"
+    - "it was bad"
+    - "had a bad day"
+    - "feeling under the weather"
+    - "under the weather"
+    - "not in the best mood"
+    - "can do better"
+    - "things are not doing well"
+    - "things are going wrong"
+    - "wish it was better"
+    - "not how I wanted it"
+    - "I am sad"
+    - "I don't feel very well"
+    - "I am disappointed"
+    - "heart breaking"
+    - "feel nervous"
+    - "feel unhappy"
+    - "feel anxious"
+    - "feel tensed"
+    - "messed up"
+    - "feel jealous"
+    - "feel scared"
+    - "fear"
+    - "scared"
+    - "frightened"
+    - "vexed"
+    - "super sad"
+    - "I'm so sad"
+    - "sad"
+    - "very sad"
+    - "It is difficult"
+    - "bad day"
+    - "worst day ever"
+    - "not how I wanted the day to go"
+    - "i am upset"
+    - "upset"
+    - "unhappy"
+    - "not very good"
+    - "extremly sad"
+    - "so saad"
+    - "so sad"
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
+- intent: gender
+  examples: |
+    - male
+    - female
+    - other
+- intent: adult
+  examples: |
+    - adult
+    - Adult
+    - myself
+    - me
+    - I am an Adult
+    - I am adult
+- intent: have_ADHD
+  examples: |
+    - I have adhd
+- intent: q1_levelOne
+  examples: |
+    - [1]{"entity": "q1_level", "value": "1"}
+    - [2]{"entity": "q1_level", "value": "2"}
+    - [3]{"entity": "q1_level", "value": "3"}
+    - [4]{"entity": "q1_level", "value": "4"}
+- intent: q2_levelOne
+  examples: |
+    - [1]{"entity": "q2_level", "value": "1"}
+    - [2]{"entity": "q2_level", "value": "2"}
+    - [3]{"entity": "q2_level", "value": "3"}
+    - [4]{"entity": "q2_level", "value": "4"}
+- intent: q4_levelOne
+  examples: |
+    - [1]{"entity": "q4_level", "value": "1"}
+    - [2]{"entity": "q4_level", "value": "2"}
+    - [3]{"entity": "q4_level", "value": "3"}
+    - [4]{"entity": "q4_level", "value": "4"}

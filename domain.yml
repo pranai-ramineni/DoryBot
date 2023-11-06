@@ -1,0 +1,129 @@
+version: '3.1'
+intents:
+- adult
+- affirm
+- bot_challenge
+- deny
+- feedback_bad
+- feedback_good
+- gender
+- goodbye
+- greet
+- have_ADHD
+- mood_bad
+- mood_good
+- name_input
+- q1_levelOne
+- q2_levelOne
+- q4_levelOne
+
+- supply_contact_info
+- thank
+entities:
+- q2_level
+- name
+- q1_level
+- q4_level
+
+actions:
+- action_get_test_results
+- action_submit_user_feedback
+
+responses:
+  utter_greet:
+  - text: Hi, I am Dory. I help people manage their ADHD
+  utter_ask_name:
+  - text: What's your name?
+  utter_welcome:
+  - text: You're welcome
+  utter_goodbye:
+  - text: Take care, bye
+  utter_iamabot:
+  - text: I am Dory
+  utter_chitchat:
+  - text: How are you feeling today {name}?
+  utter_acknowledge_provided_info:
+  - text: Thanks {name}, for the info!
+  utter_bad_mood_response:
+  - text: I am sorry about that. Here is an inspiring quote to lift your mood. https://www.notsalmon.com/wp-content/uploads/2021/08/quote-move-forward-strong-capable-640x640.jpg
+  utter_good_mood_response:
+  - text: That is awesome! Here is a joke to make your day even better. https://www.rd.com/wp-content/uploads/2022/01/Unbeetable-food-joke-2.jpg?resize=700,700
+  utter_ADHD_help:
+  - text: Would you like to answer some questions to help your ADHD diagnosis?
+  utter_feedback:
+  - text: Thank you for reaching out, was I helpful today?
+  utter_feedback_good:
+  - text: Thank you for the feedback. See you again, bye!
+  utter_feedback_bad:
+  - text: I am sorry about that. I will improve from your feedback. See you again, bye!
+
+  utter_question1:
+  - text: Do you tend to avoid or delay getting started on a new important task?
+    buttons:
+    - title: 'Never'
+      payload: /q1_levelOne{{"q1_level":"1"}}
+    - title: 'Rarely'
+      payload: /q1_levelOne{{"q1_level":"2"}}
+    - title: 'Sometimes'
+      payload: /q1_levelOne{{"q1_level":"3"}}
+    - title: 'Often'
+      payload: /q1_levelOne{{"q1_level":"4"}}
+
+  utter_question2:
+  - text: Do you find that the majority of your tasks are boring or repetitive, making them difficult to complete?
+    buttons:
+    - title: 'Never'
+      payload: /q2_levelOne{{"q2_level":"1"}}
+    - title: 'Rarely'
+      payload: /q2_levelOne{{"q2_level":"2"}}
+    - title: 'Sometimes'
+      payload: /q2_levelOne{{"q2_level":"3"}}
+    - title: 'Often'
+      payload: /q2_levelOne{{"q2_level":"4"}}
+ 
+  utter_question4:
+  - text: How often do you feel restless or fidgety?
+    buttons:
+    - title: 'Never'
+      payload: /q4_levelOne{{"q4_level":"1"}}
+    - title: 'Rarely'
+      payload: /q4_levelOne{{"q4_level":"2"}}
+    - title: 'Sometimes'
+      payload: /q4_levelOne{{"q4_level":"3"}}
+    - title: 'Often'
+      payload: /q4_levelOne{{"q4_level":"4"}}
+      
+
+
+slots:
+  name:
+    type: text
+    influence_conversation: false
+    mappings:
+    - type: from_entity
+      entity: name
+
+  q1_level:
+    type: text
+    influence_conversation: false
+    mappings:
+    - type: from_entity
+      entity: q1_level
+      
+  q2_level:
+    type: text
+    influence_conversation: false
+    mappings:
+    - type: from_entity
+      entity: q2_level
+
+  q4_level:
+    type: text
+    influence_conversation: false
+    mappings:
+    - type: from_entity
+      entity: q4_level
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

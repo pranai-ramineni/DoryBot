@@ -1,0 +1,58 @@
+2022-12-04 23:41:04,702 [INFO ]  Starting Rasa server on http://0.0.0.0:5005
+2022-12-04 23:41:06,012 [INFO ]  Loading model models\20221204-215329-libretto-auslese.tar.gz...
+2022-12-04 23:42:24,963 [WARNI]  The UnexpecTED Intent Policy is currently experimental and might change or be removed in the future 🔬 Please share your feedback on it in the forum (https://forum.rasa.com) to help us make this feature ready for production.
+2022-12-04 23:42:43,082 [INFO ]  Rasa server is up and running.
+2022-12-04 23:44:48,897 [INFO ]  Starting Rasa server on http://0.0.0.0:5005
+2022-12-04 23:44:49,757 [INFO ]  Loading model models\20221204-215329-libretto-auslese.tar.gz...
+2022-12-04 23:45:49,207 [WARNI]  The UnexpecTED Intent Policy is currently experimental and might change or be removed in the future 🔬 Please share your feedback on it in the forum (https://forum.rasa.com) to help us make this feature ready for production.
+2022-12-04 23:46:00,011 [INFO ]  Rasa server is up and running.
+2022-12-04 23:46:47,616 [ERROR]  Failed to run custom action 'action_get_search_results'. Couldn't connect to the server at 'http://localhost:5055/webhook'. Is the server running? Error: Cannot connect to host localhost:5055 ssl:default [The remote computer refused the network connection]
+2022-12-04 23:46:47,616 [ERROR]  Encountered an exception while running action 'action_get_search_results'.Bot will continue, but the actions events are lost. Please check the logs of your action server for more information.
+Traceback (most recent call last):
+  File "c:\users\prana\documents\masters\ai & data engineering\project\.venv\lib\site-packages\aiohttp\connector.py", line 980, in _wrap_create_connection
+    return await self._loop.create_connection(*args, **kwargs)  # type: ignore[return-value]  # noqa
+  File "C:\Users\prana\AppData\Local\Programs\Python\Python38\lib\asyncio\base_events.py", line 1017, in create_connection
+    raise exceptions[0]
+  File "C:\Users\prana\AppData\Local\Programs\Python\Python38\lib\asyncio\base_events.py", line 1002, in create_connection
+    sock = await self._connect_sock(
+  File "C:\Users\prana\AppData\Local\Programs\Python\Python38\lib\asyncio\base_events.py", line 916, in _connect_sock
+    await self.sock_connect(sock, address)
+  File "C:\Users\prana\AppData\Local\Programs\Python\Python38\lib\asyncio\proactor_events.py", line 702, in sock_connect
+    return await self._proactor.connect(sock, address)
+  File "C:\Users\prana\AppData\Local\Programs\Python\Python38\lib\asyncio\windows_events.py", line 808, in _poll
+    value = callback(transferred, key, ov)
+  File "C:\Users\prana\AppData\Local\Programs\Python\Python38\lib\asyncio\windows_events.py", line 595, in finish_connect
+    ov.getresult()
+ConnectionRefusedError: [WinError 1225] The remote computer refused the network connection
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "c:\users\prana\documents\masters\ai & data engineering\project\.venv\lib\site-packages\rasa\core\actions\action.py", line 741, in run
+    response: Any = await self.action_endpoint.request(
+  File "c:\users\prana\documents\masters\ai & data engineering\project\.venv\lib\site-packages\rasa\utils\endpoints.py", line 164, in request
+    async with session.request(
+  File "c:\users\prana\documents\masters\ai & data engineering\project\.venv\lib\site-packages\aiohttp\client.py", line 1141, in __aenter__
+    self._resp = await self._coro
+  File "c:\users\prana\documents\masters\ai & data engineering\project\.venv\lib\site-packages\aiohttp\client.py", line 536, in _request
+    conn = await self._connector.connect(
+  File "c:\users\prana\documents\masters\ai & data engineering\project\.venv\lib\site-packages\aiohttp\connector.py", line 540, in connect
+    proto = await self._create_connection(req, traces, timeout)
+  File "c:\users\prana\documents\masters\ai & data engineering\project\.venv\lib\site-packages\aiohttp\connector.py", line 901, in _create_connection
+    _, proto = await self._create_direct_connection(req, traces, timeout)
+  File "c:\users\prana\documents\masters\ai & data engineering\project\.venv\lib\site-packages\aiohttp\connector.py", line 1206, in _create_direct_connection
+    raise last_exc
+  File "c:\users\prana\documents\masters\ai & data engineering\project\.venv\lib\site-packages\aiohttp\connector.py", line 1175, in _create_direct_connection
+    transp, proto = await self._wrap_create_connection(
+  File "c:\users\prana\documents\masters\ai & data engineering\project\.venv\lib\site-packages\aiohttp\connector.py", line 988, in _wrap_create_connection
+    raise client_error(req.connection_key, exc) from exc
+aiohttp.client_exceptions.ClientConnectorError: Cannot connect to host localhost:5055 ssl:default [The remote computer refused the network connection]
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "c:\users\prana\documents\masters\ai & data engineering\project\.venv\lib\site-packages\rasa\core\processor.py", line 874, in _run_action
+    events = await action.run(
+  File "c:\users\prana\documents\masters\ai & data engineering\project\.venv\lib\site-packages\rasa\core\actions\action.py", line 776, in run
+    raise RasaException(
+rasa.shared.exceptions.RasaException: Failed to execute custom action 'action_get_search_results'. Couldn't connect to the server at 'http://localhost:5055/webhook.

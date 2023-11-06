@@ -1,0 +1,80 @@
+version: "3.1"
+
+stories:
+  - story: interactive_story_1
+    steps:
+    - intent: greet
+    - action: utter_greet
+    - action: utter_ask_name
+    - intent: name_input
+      entities:
+      - name: pranai
+    - slot_was_set:
+      - name: pranai
+    - checkpoint: mood
+
+  - story: mood bad
+    steps:
+    - checkpoint: mood
+    - action: utter_chitchat
+    - intent: mood_bad
+    - action: utter_bad_mood_response
+    - checkpoint: ADHD
+
+  - story: mood good
+    steps:
+    - checkpoint: mood
+    - action: utter_chitchat
+    - intent: mood_good
+    - action: utter_good_mood_response
+    - checkpoint: ADHD
+
+  - story: adhd help
+    steps:
+    - checkpoint: ADHD
+    - action: utter_ADHD_help
+    - intent: affirm
+    - action: utter_question1
+    - intent: q1_levelOne
+      entities:
+      - q1_level: '1'
+    - slot_was_set:
+      - q1_level: '1'
+    - action: utter_question2
+    - intent: q2_levelOne
+      entities:
+      - q2_level: '2'
+    - slot_was_set:
+      - q2_level: '2'
+    - action: utter_question4
+    - intent: q4_levelOne
+      entities:
+      - q4_level: '4'
+    - slot_was_set:
+      - q4_level: '4'
+    - action: action_get_test_results
+    - checkpoint: ask_feedback
+
+  - story: adhd help
+    steps:
+    - checkpoint: ADHD
+    - action: utter_ADHD_help
+    - intent: deny
+    - checkpoint: ask_feedback
+
+  - story: feedback bad bye
+    steps:
+    - checkpoint: ask_feedback
+    - action: utter_feedback
+    - intent: feedback_bad
+    - action: utter_feedback_bad    
+    - action: action_submit_user_feedback
+
+  - story: feedback good bye
+    steps:
+    - checkpoint: ask_feedback
+    - action: utter_feedback
+    - intent: feedback_good
+    - action: utter_feedback_good
+    - action: action_submit_user_feedback
+
